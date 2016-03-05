@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
  * @author Igor Henrique da Silva
  */
  
+ //Commentaries were set up both in English and Portuguese.
+ 
 //Criação da classe "VendingMachine_Frame" que cria uma tela para ambientação.
 //Creating the class "VendingMachine_Frame" that generates a frame.
 public class VendingMachine_Frame extends javax.swing.JFrame {
