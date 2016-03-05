@@ -5,24 +5,29 @@ import javax.swing.JOptionPane;
 /*
  * @author Igor Henrique da Silva
  */
+ 
+//Criação da classe "VendingMachine_Frame" que cria uma tela para ambientação.
+//Creating the class "VendingMachine_Frame" that generates a frame.
 public class VendingMachine_Frame extends javax.swing.JFrame {
     
-    double credit = 0.0; //Credit in machine
-    double profit = 0.0; //Profit of the sales
-    double wallet = 15.0; //Total money of the user
-    VendingMachine vm = new VendingMachine(); //Creating VendingMachine object
+    double credit = 0.0; //Credit in machine / Crédito na máquina.
+    double profit = 0.0; //Profit of the sales / Lucro das vendas.
+    double wallet = 15.0; //Total of money's user / Dinheiro do usuário.
+    VendingMachine vm = new VendingMachine(); //Creating an object "vm" from "VendingMachine"./ Criando um objeto "vm" do tipo "VendingMachine".
 
-    /**
-     * Creates new form VendingMachine_Frame
-     */
+    //Método criado para exibição da tela.
+    //This method were created to show the Vending Machine frame.
     public VendingMachine_Frame() {
         initComponents();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true); 
         
-        //Stocking products
+        //Estocando produtos.
+        //Stocking products.
         products = vm.restockProducts();
-        //Showing product prices
+        
+        //Exibindo o preço dos produtos.
+        //Showing the product prices.
         a1.setText(NumberFormat.getCurrencyInstance().format(products.get(0).getPrice()));
         a2.setText(NumberFormat.getCurrencyInstance().format(products.get(1).getPrice()));
         a3.setText(NumberFormat.getCurrencyInstance().format(products.get(2).getPrice()));
@@ -31,6 +36,9 @@ public class VendingMachine_Frame extends javax.swing.JFrame {
         jLabelWallet.setText("You have "+NumberFormat.getCurrencyInstance().format(wallet)+" remaining");
 
     }
+    
+    //Abaixo estão as ações e atribuições dos componentes da tela.
+    //Below there are the actions and attributes of the frame components.
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
