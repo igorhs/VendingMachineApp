@@ -16,7 +16,7 @@ public class Products {
     private int quantity;
 
     //Gerando getters e setters para os atributos "name", "price" e "quantity".
-    //Generating getters and setters for the "name", "price", and "quantity" attributes.
+    //Generating getters and setters for the attributes "name", "price", and "quantity".
     public Products(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
