@@ -6,9 +6,8 @@ package vendingmachine_igor;
  */
 public class VendingMachine_Igor {
 
-    /**
-     * @param args the command line arguments
-     */
+    //Criando classe para exibir a tela(ambiente) da Máquina de Vendas(Vending Machine).
+    //Creating a class to show the Vending Machine frame.
     public static void main(String[] args) {
         VendingMachine_Frame f = new VendingMachine_Frame();
         f.setVisible(true);
